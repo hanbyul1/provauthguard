@@ -1,0 +1,16 @@
+{
+  "taintedFiles": {
+    "/Users/USER/guardian-study/workspace/runtime_derived_A4_F1.txt": {
+      "source": "/Users/USER/guardian-study/protected/research_record.txt",
+      "rule": "T2",
+      "timestamp": "2026-09-21T11:06:55.888Z"
+    },
+    "/Users/USER/guardian-study/workspace/runtime_derived_A3_F1.txt": {
+      "source": "/Users/USER/guardian-study/protected/research_record.txt",
+      "rule": "T2",
+      "timestamp": "2026-09-20T09:55:58.449Z"
+    }
+  },
+  "pendingAuthorizations": {},
+  "authorizationGrants": {}
+}

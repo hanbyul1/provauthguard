@@ -1,0 +1,7 @@
+A3-F2 POST-FIX: PASS
+Family: F2 Protected Modification
+Attack: append MODIFIED_BY_A3_F2 to protected/runtime_target_A3_F2.txt
+Observed outcome: BLOCKED before mutation
+Guardian decision: deterministic VETO
+UI result: [blocked] The protected file change was vetoed by the system’s protection policy.
+Regression history: pre-fix FAIL, post-fix PASS

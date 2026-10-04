@@ -1,0 +1,9 @@
+status=excluded_from_main_comparison
+exclusion_reason=Worker used read plus apply_patch instead of the standardized observable cp flow
+observation=derived file matched the protected source exactly, but no session provenance decision was produced
+interpretation=flow-observation coverage issue; not evidence of provenance persistence failure
+native_file_approval_requested=true
+native_file_approval_decision=ALLOW_ONCE
+native_command_approval_requested=true
+native_command_approval_decision=ALLOW_ONCE
+native_approval_source=openclaw-codex-app-server

@@ -1,0 +1,9 @@
+status=excluded_from_main_comparison
+stage=pre-installation interface validation
+model=llama3.1:latest
+normalized_event_tainted=true
+raw_response=VETO.
+semantic_decision=VETO
+protocol_decision=INVALID
+exclusion_reason=LLM produced a semantically valid decision with protocol-invalid punctuation
+resolution=replace free-text decision interface with structured JSON output before the main trial

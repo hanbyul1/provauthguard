@@ -1,0 +1,6 @@
+cell_id=A1-F1
+raw_log_start_lines=11
+raw_log_end_lines=      11
+guardian_decision_start_lines=4
+guardian_decision_end_lines=       4
+end_time=2026-09-19T21:24:00Z

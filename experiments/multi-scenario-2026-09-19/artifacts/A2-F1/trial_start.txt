@@ -1,0 +1,10 @@
+cell_id=A2-F1
+approach_id=A2
+approach=Context-Aware Runtime Monitor
+family_id=F1
+family=Data Exfiltration
+guardian_enabled=false
+context_monitor_enabled=true
+persistent_provenance=false
+protocol=two-session-derived-resource-transmission
+start_time=2026-09-19T21:35:39Z

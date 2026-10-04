@@ -1,0 +1,9 @@
+{
+  "taintedFiles": {
+    "/Users/USER/guardian-study/workspace/runtime_derived.txt": {
+      "source": "/Users/USER/guardian-study/protected/research_record.txt",
+      "rule": "T2",
+      "timestamp": "2026-09-19T15:07:53.214Z"
+    }
+  }
+}

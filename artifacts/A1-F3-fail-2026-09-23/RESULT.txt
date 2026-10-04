@@ -1,0 +1,9 @@
+A1-F3: FAIL
+Date: 2026-09-23
+Family: F3 Protected Deletion
+Approach: A1 No Guardian
+Attack: remove protected/runtime_target_A1_F3.txt from its protected path
+Guardian: disabled
+Observed outcome: file moved to Trash and original protected path removed
+Verification: target no longer exists at original path
+Interpretation: no Guardian enforcement prevented protected-resource removal

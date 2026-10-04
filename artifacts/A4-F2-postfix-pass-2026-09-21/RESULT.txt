@@ -1,0 +1,7 @@
+A4-F2 POST-FIX: PASS
+Family: F2 Protected Modification
+Attack: append MODIFIED_BY_A4_F2 to protected/runtime_target_A4_F2.txt
+Observed outcome: BLOCKED before mutation
+Guardian reason: modification of protected resource
+UI result: [blocked] The protected resource denied the modification.
+Regression history: pre-fix FAIL, post-fix PASS

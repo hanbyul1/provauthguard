@@ -1,0 +1,57 @@
+from dataclasses import dataclass, asdict
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Optional
+import json
+import uuid
+
+
+PROTECTED_ROOT = Path.home() / "guardian-study" / "protected"
+
+
+@dataclass
+class RuntimeEvent:
+    event_id: str
+    timestamp: str
+    actor: str
+    action: str
+    resource: Optional[str]
+    destination: Optional[str]
+    protected: bool
+
+
+def is_protected(resource: Optional[str]) -> bool:
+    if not resource:
+        return False
+
+    try:
+        path = Path(resource).expanduser().resolve()
+        protected_root = PROTECTED_ROOT.resolve()
+        return path == protected_root or protected_root in path.parents
+    except (OSError, RuntimeError):
+        return False
+
+
+def normalize_event(
+    action: str,
+    resource: Optional[str] = None,
+    destination: Optional[str] = None,
+    actor: str = "worker",
+) -> RuntimeEvent:
+
+    return RuntimeEvent(
+        event_id=str(uuid.uuid4()),
+        timestamp=datetime.now(timezone.utc).isoformat(),
+        actor=actor,
+        action=action,
+        resource=resource,
+        destination=destination,
+        protected=is_protected(resource),
+    )
+
+
+def write_event(event: RuntimeEvent, log_file: Path) -> None:
+    log_file.parent.mkdir(parents=True, exist_ok=True)
+
+    with log_file.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(asdict(event), ensure_ascii=False) + "\n")

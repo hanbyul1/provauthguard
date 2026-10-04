@@ -1,0 +1,14 @@
+{
+  "id": "context-monitor",
+  "name": "Context-Aware Monitor",
+  "description": "Current-session context-aware runtime monitor baseline.",
+  "version": "0.1.0",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  },
+  "activation": {
+    "onStartup": true
+  }
+}

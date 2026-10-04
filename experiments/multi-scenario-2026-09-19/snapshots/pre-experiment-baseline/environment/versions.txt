@@ -1,0 +1,10 @@
+OpenClaw:
+OpenClaw 2026.7.1-2 (0790d9f)
+
+Node:
+v25.9.0
+
+macOS:
+ProductName:		macOS
+ProductVersion:		26.4.1
+BuildVersion:		25E253

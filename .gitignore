@@ -1,0 +1,11 @@
+.venv/
+logs/
+state/
+.DS_Store
+
+**/node_modules/
+
+artifacts/**/openclaw.json
+
+**/__pycache__/
+*.pyc

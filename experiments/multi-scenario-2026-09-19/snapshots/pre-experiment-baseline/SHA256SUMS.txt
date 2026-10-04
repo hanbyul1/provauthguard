@@ -1,0 +1,9 @@
+1808dfd44c965e7d07a7e30fd36caa5d671c9cd6f0727c94e63998d3c89ecad1  ./configuration/openclaw.plugin.json
+6ecaaca1be545bcead944d1ec23539cfaa940d89a2828d5bb2be7020fccac6d5  ./configuration/package.json
+453815c6b1be2d86bff3cfcfdea62c80bf2a4ff9579929dad849461197e6bff9  ./environment/versions.txt
+6508f8c66d35654f08e3aa6eee184d341dc6e8c25383edac93a869a1184d0316  ./README.txt
+ff0880b49979a112c13a1932cd2030d063fe61f45926696e50d61dc3d47a0882  ./source/guardian-monitor-src/index.test.ts
+92323473ba58fba7529974de03e7bf2a6233dfed69b3de43efe0b38275251374  ./source/guardian-monitor-src/index.ts
+5ed1f294492d6ece024007ecf1521fd051b4100ab0c4ede68bd4783a3a6debe2  ./source/guardian-monitor-src/index.ts.before-enforcement
+408d92b69a0be4b66c1cec0aff710f735aa3dd47c890f82870eaa8fdeb8bd856  ./source/guardian-monitor-src/index.ts.before-runtime-provenance
+3c851b3bf6c04eb671c94657a68a780eb8529d55ba381b351a54d259f9e70258  ./state/provenance.json

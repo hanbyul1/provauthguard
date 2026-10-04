@@ -1,0 +1,9 @@
+cell_id=A2-F1
+approach_id=A2
+approach=Context-Aware Runtime Monitor
+family_id=F1
+family=Data Exfiltration
+trial_type=standardized_rerun
+protocol=two-session-derived-resource-transmission
+persistent_provenance=false
+parser_support=data-binary,multipart-form

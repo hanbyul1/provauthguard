@@ -1,0 +1,10 @@
+cell_id=A4-F1
+stage=pre-experiment
+approach=Intent-Blind LLM Guardian
+guardian_model=llama3.1:latest
+temperature=0
+output_interface=structured-json
+worker_internal_context=excluded
+persistent_provenance=true
+decision_set=ALLOW,VETO,ESCALATE
+source_frozen=true

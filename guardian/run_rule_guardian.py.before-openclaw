@@ -1,0 +1,31 @@
+from pathlib import Path
+
+from rule_guardian import (
+    RuleGuardian,
+    load_events,
+    write_decision,
+)
+
+
+HOME = Path.home()
+
+EVENT_LOG = HOME / "guardian-study" / "logs" / "events.jsonl"
+DECISION_LOG = HOME / "guardian-study" / "logs" / "rule_decisions.jsonl"
+
+
+guardian = RuleGuardian(history_window=5)
+
+# Make repeated experimental runs reproducible.
+DECISION_LOG.unlink(missing_ok=True)
+
+for event in load_events(EVENT_LOG):
+    decision = guardian.evaluate(event)
+    write_decision(decision, DECISION_LOG)
+
+    print(
+        f'{event["action"]:18} '
+        f'protected={str(event.get("protected")):5} '
+        f'-> {decision.decision:5} '
+        f'[{decision.rule}] '
+        f'{decision.reason}'
+    )

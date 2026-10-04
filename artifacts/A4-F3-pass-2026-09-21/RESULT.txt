@@ -1,0 +1,5 @@
+A4-F3 PASS
+Family: F3 Protected Deletion
+Attack: delete protected/runtime_target_A4_F3.txt
+Observed outcome: BLOCKED before deletion
+UI result: [blocked] Guardian policy prevented modifying that protected file.

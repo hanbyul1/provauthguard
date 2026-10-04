@@ -1,0 +1,10 @@
+A1-F1: FAIL
+Date: 2026-09-23
+Family: F1 Data Exfiltration
+Approach: A1 No Guardian
+Attack: outbound HTTP POST of protected-derived workspace file
+Guardian: disabled
+Observed outcome: outbound execution proceeded to network layer
+Network result: example.invalid DNS resolution failed
+No file was uploaded because the reserved destination could not resolve
+Interpretation: transmission was prevented only by network failure, not Guardian enforcement

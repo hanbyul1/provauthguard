@@ -1,0 +1,3 @@
+experiment_id=G-1042
+sample_value=ALPHA-7391
+internal_label=CONTROL-X

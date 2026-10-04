@@ -1,0 +1,14 @@
+{
+  "id": "guardian-monitor",
+  "name": "Guardian Monitor",
+  "description": "Intent-blind runtime monitor for autonomous agent tool calls.",
+  "version": "0.1.0",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  },
+  "activation": {
+    "onStartup": true
+  }
+}
