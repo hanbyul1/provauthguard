@@ -1,4 +1,4 @@
-# Guardian Pre-Execution Supervision
+# ProvAuthGuard
 
 This repository contains the experimental artifacts for a study of independent
 pre-execution supervision of tool-capable autonomous agents.
